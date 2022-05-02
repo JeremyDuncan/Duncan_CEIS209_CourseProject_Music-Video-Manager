@@ -1,6 +1,6 @@
 ﻿namespace Duncan_CourseProject_part1
 {
-    partial class Form1
+    partial class videoManagerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,54 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.titleText = new System.Windows.Forms.TextBox();
+            this.artistText = new System.Windows.Forms.TextBox();
+            this.genreText = new System.Windows.Forms.TextBox();
+            this.yearText = new System.Windows.Forms.TextBox();
+            this.urlText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.addButton = new System.Windows.Forms.Button();
+            this.outputText = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // titleText
             // 
-            this.textBox1.Location = new System.Drawing.Point(174, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(447, 38);
-            this.textBox1.TabIndex = 0;
+            this.titleText.Location = new System.Drawing.Point(174, 66);
+            this.titleText.Name = "titleText";
+            this.titleText.Size = new System.Drawing.Size(447, 38);
+            this.titleText.TabIndex = 0;
             // 
-            // textBox2
+            // artistText
             // 
-            this.textBox2.Location = new System.Drawing.Point(174, 145);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(447, 38);
-            this.textBox2.TabIndex = 1;
+            this.artistText.Location = new System.Drawing.Point(174, 145);
+            this.artistText.Name = "artistText";
+            this.artistText.Size = new System.Drawing.Size(447, 38);
+            this.artistText.TabIndex = 1;
             // 
-            // textBox3
+            // genreText
             // 
-            this.textBox3.Location = new System.Drawing.Point(174, 225);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(447, 38);
-            this.textBox3.TabIndex = 2;
+            this.genreText.Location = new System.Drawing.Point(174, 225);
+            this.genreText.Name = "genreText";
+            this.genreText.Size = new System.Drawing.Size(447, 38);
+            this.genreText.TabIndex = 2;
             // 
-            // textBox4
+            // yearText
             // 
-            this.textBox4.Location = new System.Drawing.Point(174, 323);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(447, 38);
-            this.textBox4.TabIndex = 3;
+            this.yearText.Location = new System.Drawing.Point(174, 323);
+            this.yearText.Name = "yearText";
+            this.yearText.Size = new System.Drawing.Size(447, 38);
+            this.yearText.TabIndex = 3;
             // 
-            // textBox5
+            // urlText
             // 
-            this.textBox5.Location = new System.Drawing.Point(174, 408);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(447, 38);
-            this.textBox5.TabIndex = 4;
+            this.urlText.Location = new System.Drawing.Point(174, 408);
+            this.urlText.Name = "urlText";
+            this.urlText.Size = new System.Drawing.Size(447, 38);
+            this.urlText.TabIndex = 4;
             // 
             // label1
             // 
@@ -123,42 +123,43 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "URL";
             // 
-            // button1
+            // addButton
             // 
-            this.button1.Location = new System.Drawing.Point(232, 511);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(322, 95);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Add Song";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addButton.Location = new System.Drawing.Point(232, 511);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(322, 95);
+            this.addButton.TabIndex = 10;
+            this.addButton.Text = "Add Song";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
-            // textBox6
+            // outputText
             // 
-            this.textBox6.Location = new System.Drawing.Point(715, 48);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(734, 645);
-            this.textBox6.TabIndex = 11;
+            this.outputText.Location = new System.Drawing.Point(715, 48);
+            this.outputText.Multiline = true;
+            this.outputText.Name = "outputText";
+            this.outputText.Size = new System.Drawing.Size(734, 645);
+            this.outputText.TabIndex = 11;
             // 
-            // Form1
+            // videoManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1538, 818);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.outputText);
+            this.Controls.Add(this.addButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.urlText);
+            this.Controls.Add(this.yearText);
+            this.Controls.Add(this.genreText);
+            this.Controls.Add(this.artistText);
+            this.Controls.Add(this.titleText);
             this.MinimumSize = new System.Drawing.Size(400, 0);
-            this.Name = "Form1";
+            this.Name = "videoManagerForm";
             this.Text = "Video Manager";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -167,18 +168,18 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox titleText;
+        private System.Windows.Forms.TextBox artistText;
+        private System.Windows.Forms.TextBox genreText;
+        private System.Windows.Forms.TextBox yearText;
+        private System.Windows.Forms.TextBox urlText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.TextBox outputText;
     }
 }
 
