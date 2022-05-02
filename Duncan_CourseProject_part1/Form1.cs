@@ -16,12 +16,6 @@ namespace Duncan_CourseProject_part1
         {
             InitializeComponent();
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void addButton_Click(object sender, EventArgs e)
         {
             StringBuilder sb = new StringBuilder(outputText.Text);
