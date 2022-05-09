@@ -49,6 +49,7 @@ namespace Duncan_CourseProject_part1
                 sb.Append(n1);
                 outputText.Text = sb.ToString();
                 songList.Items.Add(titleText.Text);
+                MessageBox.Show(titleText.Text + " successfully added!");
             }
         }
 
