@@ -18,19 +18,54 @@ namespace Duncan_CourseProject_part1
         }
         private void addButton_Click(object sender, EventArgs e)
         {
+            outputText.Text = "";
+
             StringBuilder sb = new StringBuilder(outputText.Text);
             string n1 = "\r\n";
-            sb.Append(titleText.Text);
-            sb.Append(n1);
-            sb.Append(artistText.Text);
-            sb.Append(n1);
-            sb.Append(genreText.Text);
-            sb.Append(n1);
-            sb.Append(yearText.Text);
-            sb.Append(n1);
-            sb.Append(urlText.Text);
-            sb.Append(n1);
-            outputText.Text = sb.ToString();
+
+            if (string.IsNullOrEmpty(titleText.Text))
+            {
+                // Title is blank
+                MessageBox.Show("The song title cannot be blank!");
+            }
+            else if (string.IsNullOrEmpty(artistText.Text))
+            {
+                // Artist is blank
+                MessageBox.Show("The artist cannot be blank!");
+            }
+            else 
+            {
+                // No blank inputs,
+                // Build output text
+                sb.Append(titleText.Text);
+                sb.Append(n1);
+                sb.Append(artistText.Text);
+                sb.Append(n1);
+                sb.Append(genreText.Text);
+                sb.Append(n1);
+                sb.Append(yearText.Text);
+                sb.Append(n1);
+                sb.Append(urlText.Text);
+                sb.Append(n1);
+                outputText.Text = sb.ToString();
+                songList.Items.Add(titleText.Text);
+            }
+        }
+
+        private void AllSongsButton_Click(object sender, EventArgs e)
+        {
+            StringBuilder sb = new StringBuilder(string.Empty);
+            string n1 = "\r\n";
+
+            // Build output text
+            foreach (var item in songList.Items)
+            {
+                sb.Append(item.ToString());
+                sb.Append(n1);
+
+                // Puts output text to output textbox
+                outputText.Text = sb.ToString();
+            }
         }
     }
 }
