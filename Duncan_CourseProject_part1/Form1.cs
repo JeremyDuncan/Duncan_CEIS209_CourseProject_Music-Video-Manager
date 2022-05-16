@@ -16,6 +16,15 @@ namespace Duncan_CourseProject_part1
         {
             InitializeComponent();
         }
+
+        private void ValidInput()
+        {
+            //Create the ValidInput() function.
+            //Here you will take the input validation code from your AddButton_Click event handler method
+            //and use it to make an independent method that returns true
+            //if all of the fields are non-empty and false if at least one is empty.
+            //As a side effect, it pops up a MessageBox indicating the first empty field that it finds.
+        }
         private void addButton_Click(object sender, EventArgs e)
         {
             outputText.Text = "";
