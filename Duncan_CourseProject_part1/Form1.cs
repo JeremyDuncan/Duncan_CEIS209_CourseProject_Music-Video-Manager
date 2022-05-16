@@ -110,5 +110,10 @@ namespace Duncan_CourseProject_part1
                 outputText.Text = sb.ToString();
             }
         }
+
+        private void findButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -222,6 +222,7 @@
             this.findButton.TabIndex = 16;
             this.findButton.Text = "Find Song";
             this.findButton.UseVisualStyleBackColor = false;
+            this.findButton.Click += new System.EventHandler(this.findButton_Click);
             // 
             // videoManagerForm
             // 
