@@ -117,6 +117,14 @@ namespace Duncan_CourseProject_part1
                 // Messagebox("Song Found")
             //else
                 // Messagebox("Song not in list!")
+            if(SongInList(titleText.Text))
+            {
+                MessageBox.Show("Song Found");
+            }
+            else
+            {
+                MessageBox.Show("Song not in List!");
+            }
 
         }
     }
