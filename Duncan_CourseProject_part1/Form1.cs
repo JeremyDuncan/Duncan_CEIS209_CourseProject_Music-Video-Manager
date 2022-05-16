@@ -17,13 +17,45 @@ namespace Duncan_CourseProject_part1
             InitializeComponent();
         }
 
-        private void ValidInput()
+        private bool ValidInput()
         {
             //Create the ValidInput() function.
             //Here you will take the input validation code from your AddButton_Click event handler method
+            if (string.IsNullOrEmpty(titleText.Text))
+            {
+                // Title is blank
+               MessageBox.Show("The song title cannot be blank!");
+               return false;
+            }
+            else if (string.IsNullOrEmpty(artistText.Text))
+            {
+                // **** is blank
+                MessageBox.Show("the artist cannot be blank!");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(genreText.Text))
+            {
+                // **** is blank
+                MessageBox.Show("the genre cannot be blank!");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(yearText.Text))
+            {
+                // **** is blank
+                MessageBox.Show("the year cannot be blank!");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(urlText.Text))
+            {
+                // **** is blank
+                MessageBox.Show("the url cannot be blank!");
+                return false;
+            }
+            else
             //and use it to make an independent method that returns true
             //if all of the fields are non-empty and false if at least one is empty.
             //As a side effect, it pops up a MessageBox indicating the first empty field that it finds.
+            return true;
         }
         private void addButton_Click(object sender, EventArgs e)
         {
