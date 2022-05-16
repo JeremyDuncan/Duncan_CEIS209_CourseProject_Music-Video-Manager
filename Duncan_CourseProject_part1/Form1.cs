@@ -113,10 +113,11 @@ namespace Duncan_CourseProject_part1
 
         private void findButton_Click(object sender, EventArgs e)
         {
-            // use your new SongInList function to determine if the song in titleText.Text
-            // is in the songList.  If the song is in the songList, use a Message Box to pop up a message
-            // saying “Song Found”. If it is not in the list, use a Message Box to show a message
-            // such as “Song not in list”. 
+            // if titleText.Text ===  song in songList
+                // Messagebox("Song Found")
+            //else
+                // Messagebox("Song not in list!")
+
         }
     }
 }
