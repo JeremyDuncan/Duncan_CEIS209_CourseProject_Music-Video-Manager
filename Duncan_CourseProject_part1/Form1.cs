@@ -17,6 +17,15 @@ namespace Duncan_CourseProject_part1
             InitializeComponent();
         }
 
+        private bool SongInList(string songTitle)
+        {
+            //The function is passed a string containing the song title to find,
+            //and a bool flag variable is set to false (i.e., song not found yet).
+            //It then loops through the songList, (with foreach) checking for a match.
+            //If a match is found, then a bool flag variable is set to true. At the end,
+            //the value of the bool flag variable is returned.
+        }
+
         private bool ValidInput()
         {
             bool isValid = true;
