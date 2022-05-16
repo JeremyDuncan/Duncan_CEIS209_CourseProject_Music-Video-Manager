@@ -48,7 +48,7 @@ namespace Duncan_CourseProject_part1
                 MessageBox.Show("the Artist cannot be blank!");
                 return notValid;
             }
-            else if (string.IsNullOrEmpty(genreText.Text))
+            else if (string.IsNullOrEmpty(genreText1.Text))
             {
                 MessageBox.Show("the Genre cannot be blank!");
                 return notValid;
@@ -83,7 +83,7 @@ namespace Duncan_CourseProject_part1
                 sb.Append(n1);
                 sb.Append(artistText.Text);
                 sb.Append(n1);
-                sb.Append(genreText.Text);
+                sb.Append(genreText1.Text);
                 sb.Append(n1);
                 sb.Append(yearText.Text);
                 sb.Append(n1);
@@ -128,7 +128,7 @@ namespace Duncan_CourseProject_part1
         {
             titleText.Text = "";
             artistText.Text = "";
-            genreText.Text = "";
+            genreText1.Text = "";
             yearText.Text = "";
             urlText.Text = "";
         }

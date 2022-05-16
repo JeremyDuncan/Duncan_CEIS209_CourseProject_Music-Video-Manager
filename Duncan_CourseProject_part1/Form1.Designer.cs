@@ -30,7 +30,6 @@
         {
             this.titleText = new System.Windows.Forms.TextBox();
             this.artistText = new System.Windows.Forms.TextBox();
-            this.genreText = new System.Windows.Forms.TextBox();
             this.yearText = new System.Windows.Forms.TextBox();
             this.urlText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,6 +45,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.findButton = new System.Windows.Forms.Button();
             this.clearSong = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.genreText = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // titleText
@@ -63,14 +64,6 @@
             this.artistText.Name = "artistText";
             this.artistText.Size = new System.Drawing.Size(336, 31);
             this.artistText.TabIndex = 1;
-            // 
-            // genreText
-            // 
-            this.genreText.Location = new System.Drawing.Point(130, 181);
-            this.genreText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.genreText.Name = "genreText";
-            this.genreText.Size = new System.Drawing.Size(336, 31);
-            this.genreText.TabIndex = 2;
             // 
             // yearText
             // 
@@ -240,11 +233,36 @@
             this.clearSong.UseVisualStyleBackColor = false;
             this.clearSong.Click += new System.EventHandler(this.clearSong_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(0, 0);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 33);
+            this.comboBox1.TabIndex = 18;
+            // 
+            // genreText
+            // 
+            this.genreText.FormattingEnabled = true;
+            this.genreText.Items.AddRange(new object[] {
+            "Rock",
+            "Classical",
+            "Rap",
+            "Industrial",
+            "Hip-Hop",
+            "Country"});
+            this.genreText.Location = new System.Drawing.Point(130, 181);
+            this.genreText.Name = "genreText";
+            this.genreText.Size = new System.Drawing.Size(336, 33);
+            this.genreText.TabIndex = 19;
+            // 
             // videoManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 746);
+            this.Controls.Add(this.genreText);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.clearSong);
             this.Controls.Add(this.findButton);
             this.Controls.Add(this.label7);
@@ -260,7 +278,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.urlText);
             this.Controls.Add(this.yearText);
-            this.Controls.Add(this.genreText);
             this.Controls.Add(this.artistText);
             this.Controls.Add(this.titleText);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -276,7 +293,6 @@
 
         private System.Windows.Forms.TextBox titleText;
         private System.Windows.Forms.TextBox artistText;
-        private System.Windows.Forms.TextBox genreText;
         private System.Windows.Forms.TextBox yearText;
         private System.Windows.Forms.TextBox urlText;
         private System.Windows.Forms.Label label1;
@@ -292,6 +308,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button findButton;
         private System.Windows.Forms.Button clearSong;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox genreText;
     }
 }
 
