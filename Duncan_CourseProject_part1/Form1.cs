@@ -31,6 +31,8 @@ namespace Duncan_CourseProject_part1
             return flag;
         }
 
+
+
         private bool ValidInput()
         {
             bool isValid = true;

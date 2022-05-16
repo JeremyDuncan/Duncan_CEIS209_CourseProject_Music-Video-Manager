@@ -44,6 +44,7 @@
             this.songList = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.findButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // titleText
@@ -145,7 +146,7 @@
             // 
             this.addButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(65, 225);
+            this.addButton.Location = new System.Drawing.Point(65, 205);
             this.addButton.Margin = new System.Windows.Forms.Padding(1);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(121, 40);
@@ -168,7 +169,7 @@
             // 
             this.AllSongsButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.AllSongsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AllSongsButton.Location = new System.Drawing.Point(65, 279);
+            this.AllSongsButton.Location = new System.Drawing.Point(65, 247);
             this.AllSongsButton.Margin = new System.Windows.Forms.Padding(1);
             this.AllSongsButton.Name = "AllSongsButton";
             this.AllSongsButton.Size = new System.Drawing.Size(121, 40);
@@ -210,11 +211,24 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Details";
             // 
+            // findButton
+            // 
+            this.findButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.findButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findButton.Location = new System.Drawing.Point(65, 290);
+            this.findButton.Margin = new System.Windows.Forms.Padding(1);
+            this.findButton.Name = "findButton";
+            this.findButton.Size = new System.Drawing.Size(121, 40);
+            this.findButton.TabIndex = 16;
+            this.findButton.Text = "Find Song";
+            this.findButton.UseVisualStyleBackColor = false;
+            // 
             // videoManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(564, 347);
+            this.Controls.Add(this.findButton);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.songList);
@@ -258,6 +272,7 @@
         private System.Windows.Forms.ListBox songList;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button findButton;
     }
 }
 
