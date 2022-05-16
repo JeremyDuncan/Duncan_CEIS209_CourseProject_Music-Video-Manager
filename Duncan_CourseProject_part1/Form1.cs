@@ -113,10 +113,6 @@ namespace Duncan_CourseProject_part1
 
         private void findButton_Click(object sender, EventArgs e)
         {
-            // if titleText.Text ===  song in songList
-                // Messagebox("Song Found")
-            //else
-                // Messagebox("Song not in list!")
             if(SongInList(titleText.Text))
             {
                 MessageBox.Show("Song Found");
