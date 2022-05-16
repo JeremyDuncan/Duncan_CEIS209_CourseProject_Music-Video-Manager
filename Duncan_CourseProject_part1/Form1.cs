@@ -19,34 +19,37 @@ namespace Duncan_CourseProject_part1
 
         private bool ValidInput()
         {
+            bool isValid = true;
+            bool notValid = false;
+
             if (string.IsNullOrEmpty(titleText.Text))
             {
                MessageBox.Show("The Song Title cannot be blank!");
-               return false;
+               return notValid;
             }
             else if (string.IsNullOrEmpty(artistText.Text))
             {
                 MessageBox.Show("the Artist cannot be blank!");
-                return false;
+                return notValid;
             }
             else if (string.IsNullOrEmpty(genreText.Text))
             {
                 MessageBox.Show("the Genre cannot be blank!");
-                return false;
+                return notValid;
             }
             else if (string.IsNullOrEmpty(yearText.Text))
             {
                 MessageBox.Show("the Year cannot be blank!");
-                return false;
+                return notValid;
             }
             else if (string.IsNullOrEmpty(urlText.Text))
             {
                 MessageBox.Show("the URL cannot be blank!");
-                return false;
+                return notValid;
             }
             else
             {
-                return true;
+                return isValid;
             }
         }
         private void addButton_Click(object sender, EventArgs e)
