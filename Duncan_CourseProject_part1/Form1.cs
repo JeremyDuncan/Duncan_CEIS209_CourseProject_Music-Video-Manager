@@ -48,7 +48,7 @@ namespace Duncan_CourseProject_part1
                 MessageBox.Show("the Artist cannot be blank!");
                 return notValid;
             }
-            else if (string.IsNullOrEmpty(genreText1.Text))
+            else if (string.IsNullOrEmpty(genreComboBox.Text))
             {
                 MessageBox.Show("the Genre cannot be blank!");
                 return notValid;
@@ -68,7 +68,7 @@ namespace Duncan_CourseProject_part1
                 return isValid;
             }
         }
-        private void addButton_Click(object sender, EventArgs e)
+        private void AddButton_Click(object sender, EventArgs e)
         {
             outputText.Text = "";
 
@@ -83,7 +83,7 @@ namespace Duncan_CourseProject_part1
                 sb.Append(n1);
                 sb.Append(artistText.Text);
                 sb.Append(n1);
-                sb.Append(genreText1.Text);
+                sb.Append(genreComboBox.Text);
                 sb.Append(n1);
                 sb.Append(yearText.Text);
                 sb.Append(n1);
@@ -111,7 +111,7 @@ namespace Duncan_CourseProject_part1
             }
         }
 
-        private void findButton_Click(object sender, EventArgs e)
+        private void FindButton_Click(object sender, EventArgs e)
         {
             if(SongInList(titleText.Text))
             {
@@ -124,11 +124,11 @@ namespace Duncan_CourseProject_part1
 
         }
 
-        private void clearSong_Click(object sender, EventArgs e)
+        private void ClearSong_Click(object sender, EventArgs e)
         {
             titleText.Text = "";
             artistText.Text = "";
-            genreText1.Text = "";
+            genreComboBox.Text = "";
             yearText.Text = "";
             urlText.Text = "";
         }
