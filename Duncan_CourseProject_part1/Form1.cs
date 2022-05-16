@@ -123,5 +123,10 @@ namespace Duncan_CourseProject_part1
             }
 
         }
+
+        private void clearSong_Click(object sender, EventArgs e)
+        {
+            // clear song values
+        }
     }
 }

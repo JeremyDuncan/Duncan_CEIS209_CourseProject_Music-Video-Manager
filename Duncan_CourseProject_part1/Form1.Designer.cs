@@ -238,6 +238,7 @@
             this.clearSong.TabIndex = 17;
             this.clearSong.Text = "Clear Song";
             this.clearSong.UseVisualStyleBackColor = false;
+            this.clearSong.Click += new System.EventHandler(this.clearSong_Click);
             // 
             // videoManagerForm
             // 
