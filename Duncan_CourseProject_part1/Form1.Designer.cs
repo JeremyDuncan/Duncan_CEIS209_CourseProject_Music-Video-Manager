@@ -50,41 +50,41 @@
             // 
             // titleText
             // 
-            this.titleText.Location = new System.Drawing.Point(130, 54);
+            this.titleText.Location = new System.Drawing.Point(98, 43);
             this.titleText.Margin = new System.Windows.Forms.Padding(2);
             this.titleText.Name = "titleText";
-            this.titleText.Size = new System.Drawing.Size(336, 31);
+            this.titleText.Size = new System.Drawing.Size(253, 26);
             this.titleText.TabIndex = 0;
             // 
             // artistText
             // 
-            this.artistText.Location = new System.Drawing.Point(130, 117);
+            this.artistText.Location = new System.Drawing.Point(98, 94);
             this.artistText.Margin = new System.Windows.Forms.Padding(2);
             this.artistText.Name = "artistText";
-            this.artistText.Size = new System.Drawing.Size(336, 31);
+            this.artistText.Size = new System.Drawing.Size(253, 26);
             this.artistText.TabIndex = 1;
             // 
             // yearText
             // 
-            this.yearText.Location = new System.Drawing.Point(130, 260);
+            this.yearText.Location = new System.Drawing.Point(98, 208);
             this.yearText.Margin = new System.Windows.Forms.Padding(2);
             this.yearText.Name = "yearText";
-            this.yearText.Size = new System.Drawing.Size(336, 31);
+            this.yearText.Size = new System.Drawing.Size(253, 26);
             this.yearText.TabIndex = 3;
             // 
             // urlText
             // 
-            this.urlText.Location = new System.Drawing.Point(130, 329);
+            this.urlText.Location = new System.Drawing.Point(98, 263);
             this.urlText.Margin = new System.Windows.Forms.Padding(2);
             this.urlText.Name = "urlText";
-            this.urlText.Size = new System.Drawing.Size(336, 31);
+            this.urlText.Size = new System.Drawing.Size(253, 26);
             this.urlText.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 54);
+            this.label1.Location = new System.Drawing.Point(27, 43);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 26);
@@ -95,7 +95,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 117);
+            this.label2.Location = new System.Drawing.Point(27, 94);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 26);
@@ -106,7 +106,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(36, 181);
+            this.label3.Location = new System.Drawing.Point(27, 145);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 26);
@@ -117,7 +117,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(36, 260);
+            this.label4.Location = new System.Drawing.Point(27, 208);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 26);
@@ -128,7 +128,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(36, 329);
+            this.label5.Location = new System.Drawing.Point(27, 263);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 26);
@@ -139,10 +139,10 @@
             // 
             this.addButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(154, 394);
+            this.addButton.Location = new System.Drawing.Point(116, 315);
             this.addButton.Margin = new System.Windows.Forms.Padding(2);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(242, 77);
+            this.addButton.Size = new System.Drawing.Size(182, 62);
             this.addButton.TabIndex = 5;
             this.addButton.Text = "Add Song";
             this.addButton.UseVisualStyleBackColor = false;
@@ -150,22 +150,22 @@
             // 
             // outputText
             // 
-            this.outputText.Location = new System.Drawing.Point(510, 423);
+            this.outputText.Location = new System.Drawing.Point(382, 338);
             this.outputText.Margin = new System.Windows.Forms.Padding(2);
             this.outputText.Multiline = true;
             this.outputText.Name = "outputText";
             this.outputText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.outputText.Size = new System.Drawing.Size(564, 287);
+            this.outputText.Size = new System.Drawing.Size(424, 230);
             this.outputText.TabIndex = 10;
             // 
             // AllSongsButton
             // 
             this.AllSongsButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.AllSongsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AllSongsButton.Location = new System.Drawing.Point(154, 475);
+            this.AllSongsButton.Location = new System.Drawing.Point(116, 380);
             this.AllSongsButton.Margin = new System.Windows.Forms.Padding(2);
             this.AllSongsButton.Name = "AllSongsButton";
-            this.AllSongsButton.Size = new System.Drawing.Size(242, 77);
+            this.AllSongsButton.Size = new System.Drawing.Size(182, 62);
             this.AllSongsButton.TabIndex = 6;
             this.AllSongsButton.Text = "Show All Songs";
             this.AllSongsButton.UseVisualStyleBackColor = false;
@@ -175,12 +175,12 @@
             // 
             this.songList.FormattingEnabled = true;
             this.songList.HorizontalScrollbar = true;
-            this.songList.ItemHeight = 25;
-            this.songList.Location = new System.Drawing.Point(510, 44);
-            this.songList.Margin = new System.Windows.Forms.Padding(6);
+            this.songList.ItemHeight = 20;
+            this.songList.Location = new System.Drawing.Point(382, 35);
+            this.songList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.songList.Name = "songList";
             this.songList.ScrollAlwaysVisible = true;
-            this.songList.Size = new System.Drawing.Size(564, 304);
+            this.songList.Size = new System.Drawing.Size(424, 244);
             this.songList.TabIndex = 9;
             // 
             // label6
@@ -188,7 +188,7 @@
             this.label6.AutoSize = true;
             this.label6.CausesValidation = false;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(698, 12);
+            this.label6.Location = new System.Drawing.Point(524, 10);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(128, 30);
@@ -199,7 +199,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(712, 369);
+            this.label7.Location = new System.Drawing.Point(534, 295);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(99, 30);
@@ -210,10 +210,10 @@
             // 
             this.findButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.findButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findButton.Location = new System.Drawing.Point(154, 556);
+            this.findButton.Location = new System.Drawing.Point(116, 445);
             this.findButton.Margin = new System.Windows.Forms.Padding(2);
             this.findButton.Name = "findButton";
-            this.findButton.Size = new System.Drawing.Size(242, 77);
+            this.findButton.Size = new System.Drawing.Size(182, 62);
             this.findButton.TabIndex = 7;
             this.findButton.Text = "Find Song";
             this.findButton.UseVisualStyleBackColor = false;
@@ -223,10 +223,10 @@
             // 
             this.clearSong.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.clearSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearSong.Location = new System.Drawing.Point(154, 637);
+            this.clearSong.Location = new System.Drawing.Point(116, 510);
             this.clearSong.Margin = new System.Windows.Forms.Padding(2);
             this.clearSong.Name = "clearSong";
-            this.clearSong.Size = new System.Drawing.Size(242, 77);
+            this.clearSong.Size = new System.Drawing.Size(182, 62);
             this.clearSong.TabIndex = 8;
             this.clearSong.Text = "Clear Song";
             this.clearSong.UseVisualStyleBackColor = false;
@@ -234,6 +234,7 @@
             // 
             // genreComboBox
             // 
+            this.genreComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.genreComboBox.FormattingEnabled = true;
             this.genreComboBox.Items.AddRange(new object[] {
             "Rock",
@@ -242,16 +243,17 @@
             "Industrial",
             "Hip-Hop",
             "Country"});
-            this.genreComboBox.Location = new System.Drawing.Point(130, 181);
+            this.genreComboBox.Location = new System.Drawing.Point(98, 145);
+            this.genreComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.genreComboBox.Name = "genreComboBox";
-            this.genreComboBox.Size = new System.Drawing.Size(336, 33);
+            this.genreComboBox.Size = new System.Drawing.Size(253, 28);
             this.genreComboBox.TabIndex = 2;
             // 
-            // videoManagerForm
+            // VideoManagerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1114, 746);
+            this.ClientSize = new System.Drawing.Size(836, 597);
             this.Controls.Add(this.genreComboBox);
             this.Controls.Add(this.clearSong);
             this.Controls.Add(this.findButton);
@@ -271,8 +273,8 @@
             this.Controls.Add(this.artistText);
             this.Controls.Add(this.titleText);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(306, 71);
-            this.Name = "videoManagerForm";
+            this.MinimumSize = new System.Drawing.Size(236, 71);
+            this.Name = "VideoManagerForm";
             this.Text = "Video Manager";
             this.ResumeLayout(false);
             this.PerformLayout();
