@@ -26,6 +26,12 @@ namespace Duncan_CourseProject_part1
             InitializeComponent();
         }
 
+        private int GetSongIndex(string songTitle)
+        {
+            int songIndex = songList.Items.IndexOf(songTitle);
+            return songIndex;
+        }
+
         private bool SongInList(string songTitle)
         {
             bool flag = false;
@@ -82,6 +88,8 @@ namespace Duncan_CourseProject_part1
                 return isValid;
             }
         }
+
+
         private void AddButton_Click(object sender, EventArgs e)
         {
             outputText.Text = "";
