@@ -48,13 +48,14 @@
             this.genreComboBox = new System.Windows.Forms.ComboBox();
             this.webViewDisplay = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.playButton = new System.Windows.Forms.Button();
+            this.saveSongList = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.webViewDisplay)).BeginInit();
             this.SuspendLayout();
             // 
             // titleText
             // 
             this.titleText.Location = new System.Drawing.Point(65, 28);
-            this.titleText.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.titleText.Margin = new System.Windows.Forms.Padding(1);
             this.titleText.Name = "titleText";
             this.titleText.Size = new System.Drawing.Size(170, 20);
             this.titleText.TabIndex = 0;
@@ -62,7 +63,7 @@
             // artistText
             // 
             this.artistText.Location = new System.Drawing.Point(65, 61);
-            this.artistText.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.artistText.Margin = new System.Windows.Forms.Padding(1);
             this.artistText.Name = "artistText";
             this.artistText.Size = new System.Drawing.Size(170, 20);
             this.artistText.TabIndex = 1;
@@ -70,7 +71,7 @@
             // yearText
             // 
             this.yearText.Location = new System.Drawing.Point(65, 135);
-            this.yearText.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.yearText.Margin = new System.Windows.Forms.Padding(1);
             this.yearText.Name = "yearText";
             this.yearText.Size = new System.Drawing.Size(170, 20);
             this.yearText.TabIndex = 3;
@@ -78,7 +79,7 @@
             // urlText
             // 
             this.urlText.Location = new System.Drawing.Point(65, 171);
-            this.urlText.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.urlText.Margin = new System.Windows.Forms.Padding(1);
             this.urlText.Name = "urlText";
             this.urlText.Size = new System.Drawing.Size(170, 20);
             this.urlText.TabIndex = 4;
@@ -143,7 +144,7 @@
             this.addButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.Location = new System.Drawing.Point(250, 28);
-            this.addButton.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.addButton.Margin = new System.Windows.Forms.Padding(1);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(121, 40);
             this.addButton.TabIndex = 5;
@@ -154,7 +155,7 @@
             // outputText
             // 
             this.outputText.Location = new System.Drawing.Point(10, 491);
-            this.outputText.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.outputText.Margin = new System.Windows.Forms.Padding(1);
             this.outputText.Multiline = true;
             this.outputText.Name = "outputText";
             this.outputText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -166,7 +167,7 @@
             this.AllSongsButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.AllSongsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AllSongsButton.Location = new System.Drawing.Point(250, 109);
-            this.AllSongsButton.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.AllSongsButton.Margin = new System.Windows.Forms.Padding(1);
             this.AllSongsButton.Name = "AllSongsButton";
             this.AllSongsButton.Size = new System.Drawing.Size(121, 40);
             this.AllSongsButton.TabIndex = 6;
@@ -213,7 +214,7 @@
             this.findButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.findButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.findButton.Location = new System.Drawing.Point(250, 67);
-            this.findButton.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.findButton.Margin = new System.Windows.Forms.Padding(1);
             this.findButton.Name = "findButton";
             this.findButton.Size = new System.Drawing.Size(121, 40);
             this.findButton.TabIndex = 7;
@@ -226,7 +227,7 @@
             this.clearSong.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.clearSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearSong.Location = new System.Drawing.Point(250, 150);
-            this.clearSong.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.clearSong.Margin = new System.Windows.Forms.Padding(1);
             this.clearSong.Name = "clearSong";
             this.clearSong.Size = new System.Drawing.Size(121, 40);
             this.clearSong.TabIndex = 8;
@@ -246,7 +247,7 @@
             "Hip-Hop",
             "Country"});
             this.genreComboBox.Location = new System.Drawing.Point(65, 94);
-            this.genreComboBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.genreComboBox.Margin = new System.Windows.Forms.Padding(1);
             this.genreComboBox.Name = "genreComboBox";
             this.genreComboBox.Size = new System.Drawing.Size(170, 21);
             this.genreComboBox.TabIndex = 2;
@@ -276,11 +277,25 @@
             this.playButton.UseVisualStyleBackColor = false;
             this.playButton.Click += new System.EventHandler(this.playButton_Click);
             // 
+            // saveSongList
+            // 
+            this.saveSongList.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.saveSongList.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveSongList.Location = new System.Drawing.Point(250, 192);
+            this.saveSongList.Margin = new System.Windows.Forms.Padding(1);
+            this.saveSongList.Name = "saveSongList";
+            this.saveSongList.Size = new System.Drawing.Size(121, 40);
+            this.saveSongList.TabIndex = 18;
+            this.saveSongList.Text = "Save Song List";
+            this.saveSongList.UseVisualStyleBackColor = false;
+            this.saveSongList.Click += new System.EventHandler(this.saveSongList_Click);
+            // 
             // VideoManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(881, 659);
+            this.Controls.Add(this.saveSongList);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.webViewDisplay);
             this.Controls.Add(this.genreComboBox);
@@ -301,7 +316,7 @@
             this.Controls.Add(this.yearText);
             this.Controls.Add(this.artistText);
             this.Controls.Add(this.titleText);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.MinimumSize = new System.Drawing.Size(163, 60);
             this.Name = "VideoManagerForm";
             this.Text = "Video Manager";
@@ -333,6 +348,7 @@
         private System.Windows.Forms.ComboBox genreComboBox;
         private Microsoft.Web.WebView2.WinForms.WebView2 webViewDisplay;
         private System.Windows.Forms.Button playButton;
+        private System.Windows.Forms.Button saveSongList;
     }
 }
 

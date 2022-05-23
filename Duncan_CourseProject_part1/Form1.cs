@@ -22,12 +22,13 @@ namespace Duncan_CourseProject_CEIS209
         int[] yearArray = new int[5];
         int songCount = 0;
         int songIndex;
+        string[] songSaveArray = new string[5];
 
         public VideoManagerForm()
         {
             InitializeComponent();
         }
-   
+
         private int GetSongIndex(string songTitle)
         {
             int index = songList.Items.IndexOf(songTitle);
@@ -47,8 +48,6 @@ namespace Duncan_CourseProject_CEIS209
             }
             return flag;
         }
-
-
 
         private bool ValidInput()
         {
@@ -96,7 +95,6 @@ namespace Duncan_CourseProject_CEIS209
             }
         }
 
-
         private void AddButton_Click(object sender, EventArgs e)
         {
             outputText.Text = "";
@@ -114,9 +112,6 @@ namespace Duncan_CourseProject_CEIS209
                 urlArray[songCount] = urlText.Text;
                 yearArray[songCount] = int.Parse(yearText.Text);
 
-                // Increments song counter after every song added
-                songCount = songCount + 1;
-
                 // No blank inputs,
                 // Build output text
                 sb.Append(titleText.Text);
@@ -130,7 +125,11 @@ namespace Duncan_CourseProject_CEIS209
                 sb.Append(urlText.Text);
                 sb.Append(n1);
                 outputText.Text = sb.ToString();
+                songSaveArray[songCount] = sb.ToString();
                 MessageBox.Show(titleText.Text + " successfully added!");
+
+                // Increments song counter after every song added
+                songCount = songCount + 1;
             }
         }
 
@@ -220,5 +219,33 @@ namespace Duncan_CourseProject_CEIS209
             }
            
         }
+
+        private void Data()
+        {
+            // Set a variable to the Documents path.
+            string docPath =
+              Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            // This will create a file named CEIS209_Song-List.txt
+            // at the specified location 
+            StreamWriter sw = new StreamWriter(Path.Combine(docPath, "CEIS209_Song-List.txt"));
+
+            // To write a line in buffer
+            foreach (var item in songSaveArray)
+            {
+                sw.WriteLine(item);
+            }
+
+            // To write in output stream
+            sw.Flush();
+
+            // To close the stream
+            sw.Close();
+        }
+        private void saveSongList_Click(object sender, EventArgs e)
+        {
+            Data();
+        }
+       
     }
 }
