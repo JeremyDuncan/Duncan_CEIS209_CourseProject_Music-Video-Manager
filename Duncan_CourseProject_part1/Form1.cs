@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Web.WebView2.Core;
 
 namespace Duncan_CourseProject_part1
 {
@@ -83,6 +84,11 @@ namespace Duncan_CourseProject_part1
                 MessageBox.Show("the URL cannot be blank!");
                 return notValid;
             }
+            else if (songCount > 4)
+            { 
+                MessageBox.Show("5-song limit has been reached");
+                return notValid;
+            }
             else
             {
                 return isValid;
@@ -99,24 +105,16 @@ namespace Duncan_CourseProject_part1
 
             if (ValidInput()) // If all text boxes have input 
             {
-                if (songCount > 5)
-                {
-                    MessageBox.Show("5-song limit has been reached");
-                }
-                else
-                {
-                    // Adds title, artists, genre, year, and url to arrays
-                    songList.Items.Add(titleText.Text);
-                    titleArray[songCount] = titleText.Text;
-                    artistArray[songCount] = artistText.Text;
-                    genreArray[songCount] = genreComboBox.SelectedItem.ToString();
-                    urlArray[songCount] = urlText.Text;
-                    yearArray[songCount] = int.Parse(yearText.Text);
+                // Adds title, artists, genre, year, and url to arrays
+                songList.Items.Add(titleText.Text);
+                titleArray[songCount] = titleText.Text;
+                artistArray[songCount] = artistText.Text;
+                genreArray[songCount] = genreComboBox.SelectedItem.ToString();
+                urlArray[songCount] = urlText.Text;
+                yearArray[songCount] = int.Parse(yearText.Text);
 
-                    // Increments song counter after every song added
-                    songCount++;
-
-                }
+                // Increments song counter after every song added
+                songCount = songCount + 1;
 
                 // No blank inputs,
                 // Build output text
@@ -192,7 +190,7 @@ namespace Duncan_CourseProject_part1
 
         private void songList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int songIndex = -1;
+            int songIndex = 0;
             StringBuilder sb = new StringBuilder(string.Empty);
             string n1 = "\r\n";
 
@@ -210,6 +208,13 @@ namespace Duncan_CourseProject_part1
             sb.Append(n1);
 
             outputText.Text = sb.ToString();           
+        }
+
+        private void playButton_Click(object sender, EventArgs e)
+        {
+            int songIndex=songList.SelectedIndex;
+            String  url = urlArray[songIndex];
+            webViewDisplay.CoreWebView2.Navigate("https://" + url);
         }
     }
 }
