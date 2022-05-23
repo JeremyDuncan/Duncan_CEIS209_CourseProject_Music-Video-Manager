@@ -25,7 +25,7 @@ namespace Duncan_CourseProject_part1
         {
             InitializeComponent();
         }
-
+   
         private int GetSongIndex(string songTitle)
         {
             int songIndex = songList.Items.IndexOf(songTitle);
@@ -146,6 +146,7 @@ namespace Duncan_CourseProject_part1
                 sb.Append(item.ToString());
                 sb.Append(n1);
 
+
                 // Puts output text to output textbox
                 outputText.Text = sb.ToString();
             }
@@ -153,8 +154,24 @@ namespace Duncan_CourseProject_part1
 
         private void FindButton_Click(object sender, EventArgs e)
         {
-            if(SongInList(titleText.Text))
+            int songIndex = 0;
+            StringBuilder sb = new StringBuilder(string.Empty);
+            string n1 = "\r\n";
+
+            if (SongInList(titleText.Text))
             {
+                songIndex = GetSongIndex(titleText.Text);
+                sb.Append(titleArray[songIndex]);
+                sb.Append(n1);
+                sb.Append(artistArray[songIndex]);
+                sb.Append(n1);
+                sb.Append(genreArray[songIndex]);
+                sb.Append(n1);
+                sb.Append(yearArray[songIndex].ToString());
+                sb.Append(n1);
+                sb.Append(urlArray[songIndex]);
+                sb.Append(n1);
+
                 MessageBox.Show("Song Found");
             }
             else
@@ -171,6 +188,28 @@ namespace Duncan_CourseProject_part1
             genreComboBox.Text = "";
             yearText.Text = "";
             urlText.Text = "";
+        }
+
+        private void songList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int songIndex = -1;
+            StringBuilder sb = new StringBuilder(string.Empty);
+            string n1 = "\r\n";
+
+            songIndex = songList.SelectedIndex;
+
+            sb.Append(titleArray[songIndex]);
+            sb.Append(n1);
+            sb.Append(artistArray[songIndex]);
+            sb.Append(n1);
+            sb.Append(genreArray[songIndex]);
+            sb.Append(n1);
+            sb.Append(yearArray[songIndex].ToString());
+            sb.Append(n1);
+            sb.Append(urlArray[songIndex]);
+            sb.Append(n1);
+
+            outputText.Text = sb.ToString();           
         }
     }
 }

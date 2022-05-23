@@ -182,6 +182,7 @@
             this.songList.ScrollAlwaysVisible = true;
             this.songList.Size = new System.Drawing.Size(424, 244);
             this.songList.TabIndex = 9;
+            this.songList.SelectedIndexChanged += new System.EventHandler(this.songList_SelectedIndexChanged);
             // 
             // label6
             // 
