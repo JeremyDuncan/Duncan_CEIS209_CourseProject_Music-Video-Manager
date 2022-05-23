@@ -103,6 +103,18 @@ d. NOTE: the text in textboxes is immutable, which means that you have to store 
 
             if (ValidInput()) // If all text boxes have input 
             {
+                // Adds title, artists, genre, year, and url to arrays
+                songList.Items.Add(titleText.Text);
+                titleArray[songCount] = titleText.Text;
+                artistArray[songCount] = artistText.Text;
+                genreArray[songCount] = genreComboBox.SelectedItem.ToString();
+                urlArray[songCount] = urlText.Text;
+                yearArray[songCount] = int.Parse(yearText.Text);
+
+
+                // Increments song counter after every song added
+                songCount++;
+
                 // No blank inputs,
                 // Build output text
                 sb.Append(titleText.Text);
@@ -116,7 +128,6 @@ d. NOTE: the text in textboxes is immutable, which means that you have to store 
                 sb.Append(urlText.Text);
                 sb.Append(n1);
                 outputText.Text = sb.ToString();
-                songList.Items.Add(titleText.Text);
                 MessageBox.Show(titleText.Text + " successfully added!");
             }
         }
