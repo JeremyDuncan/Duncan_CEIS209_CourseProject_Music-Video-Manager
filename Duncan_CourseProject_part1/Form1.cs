@@ -67,6 +67,11 @@ namespace Duncan_CourseProject_part1
                 MessageBox.Show("the Year cannot be blank!");
                 return notValid;
             }
+            else if (int.TryParse(yearText.Text, out int value ) == false)
+                {
+                MessageBox.Show("the Year must contain only numbers!");
+                return notValid;
+            }
             else if (string.IsNullOrEmpty(urlText.Text))
             {
                 MessageBox.Show("the URL cannot be blank!");
