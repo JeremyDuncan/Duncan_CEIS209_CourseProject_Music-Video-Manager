@@ -13,7 +13,12 @@ namespace Duncan_CourseProject_part1
     public partial class VideoManagerForm : Form
     {
         //Declare arrays of titles, artists, genres, years, and URLs.
-        
+        string[] titleArray = new string[5];
+        string[] artistArray = new string[5];
+        string[] genreArray = new string[5];
+        string[] urlArray = new string[5];
+        int[] yearArray = new int[5];
+
 
         public VideoManagerForm()
         {
