@@ -212,10 +212,22 @@ namespace Duncan_CourseProject_CEIS209
         {
             songIndex=songList.SelectedIndex;
 
+            // If song is selected then...
             if (songIndex != -1)
             {
                 String url = urlArray[songIndex];
-                webViewDisplay.CoreWebView2.Navigate("https://" + url);
+
+                // If user inputs url with https:// then add url
+                if  (url.Contains("https://")) 
+                {
+                    webViewDisplay.CoreWebView2.Navigate(url);
+                }
+                // Else add https:// the the front of the url
+                else
+                {
+                    webViewDisplay.CoreWebView2.Navigate("https://" + url);
+                }
+
             }
            
         }
