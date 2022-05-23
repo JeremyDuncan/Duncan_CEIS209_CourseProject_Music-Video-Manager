@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Duncan_CourseProject_part1.Properties
+namespace Duncan_CourseProject_CEIS209.Properties
 {
 
 

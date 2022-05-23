@@ -1,4 +1,4 @@
-﻿namespace Duncan_CourseProject_part1
+﻿namespace Duncan_CourseProject_CEIS209
 {
     partial class VideoManagerForm
     {

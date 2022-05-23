@@ -8,8 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Web.WebView2.Core;
+using System.IO;
 
-namespace Duncan_CourseProject_part1
+namespace Duncan_CourseProject_CEIS209
 {
     public partial class VideoManagerForm : Form
     {
@@ -213,8 +214,13 @@ namespace Duncan_CourseProject_part1
         private void playButton_Click(object sender, EventArgs e)
         {
             int songIndex=songList.SelectedIndex;
-            String  url = urlArray[songIndex];
-            webViewDisplay.CoreWebView2.Navigate("https://" + url);
+
+            if (songIndex != -1)
+            {
+                String url = urlArray[songIndex];
+                webViewDisplay.CoreWebView2.Navigate("https://" + url);
+            }
+           
         }
     }
 }
