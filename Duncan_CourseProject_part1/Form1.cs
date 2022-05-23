@@ -220,6 +220,8 @@ namespace Duncan_CourseProject_CEIS209
            
         }
 
+
+        // Save File Section ==================================================
         private void Data()
         {
             // Set a variable to the Documents path.
@@ -241,11 +243,16 @@ namespace Duncan_CourseProject_CEIS209
 
             // To close the stream
             sw.Close();
+
+            // Shows user where the files saved
+            MessageBox.Show("File saved at: " + docPath);
         }
+
         private void saveSongList_Click(object sender, EventArgs e)
         {
+            // When save button is clicked,
+            // Calls data() to save file
             Data();
         }
-       
     }
 }
