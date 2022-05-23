@@ -18,6 +18,7 @@ namespace Duncan_CourseProject_part1
         string[] genreArray = new string[5];
         string[] urlArray = new string[5];
         int[] yearArray = new int[5];
+        int songCount = 0;
 
 
         public VideoManagerForm()
@@ -78,6 +79,23 @@ namespace Duncan_CourseProject_part1
         }
         private void AddButton_Click(object sender, EventArgs e)
         {
+            /* 
+            
+a. Increment the songCount counter (which you declared and initialized to 0 
+   just under the declarations for the arrays) when a song is successfully added.
+
+b. Insert the new song data at the array positions indicated by the songCount.  
+   Remember, C# arrays indices start at 0, not 1!
+
+c. Make sure, BEFORE you try adding anything to an array, that your songCount is 
+   not higher than the number of spaces in the array!  If it is, then pop up a Messagebox 
+   stating that the user has reached their five-song limit. 
+
+d. NOTE: the text in textboxes is immutable, which means that you have to store it in a 
+   variable before you can perform other operations. 
+
+             */
+
             outputText.Text = "";
 
             StringBuilder sb = new StringBuilder(outputText.Text);
