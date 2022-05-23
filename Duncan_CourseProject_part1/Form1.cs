@@ -21,7 +21,7 @@ namespace Duncan_CourseProject_CEIS209
         string[] urlArray = new string[5];
         int[] yearArray = new int[5];
         int songCount = 0;
-
+        int songIndex;
 
         public VideoManagerForm()
         {
@@ -30,8 +30,8 @@ namespace Duncan_CourseProject_CEIS209
    
         private int GetSongIndex(string songTitle)
         {
-            int songIndex = songList.Items.IndexOf(songTitle);
-            return songIndex;
+            int index = songList.Items.IndexOf(songTitle);
+            return index;
         }
 
         private bool SongInList(string songTitle)
@@ -153,7 +153,6 @@ namespace Duncan_CourseProject_CEIS209
 
         private void FindButton_Click(object sender, EventArgs e)
         {
-            int songIndex = 0;
             StringBuilder sb = new StringBuilder(string.Empty);
             string n1 = "\r\n";
 
@@ -191,7 +190,6 @@ namespace Duncan_CourseProject_CEIS209
 
         private void songList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int songIndex = 0;
             StringBuilder sb = new StringBuilder(string.Empty);
             string n1 = "\r\n";
 
@@ -213,7 +211,7 @@ namespace Duncan_CourseProject_CEIS209
 
         private void playButton_Click(object sender, EventArgs e)
         {
-            int songIndex=songList.SelectedIndex;
+            songIndex=songList.SelectedIndex;
 
             if (songIndex != -1)
             {
