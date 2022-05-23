@@ -79,23 +79,6 @@ namespace Duncan_CourseProject_part1
         }
         private void AddButton_Click(object sender, EventArgs e)
         {
-            /* 
-            
-a. Increment the songCount counter (which you declared and initialized to 0 
-   just under the declarations for the arrays) when a song is successfully added.
-
-b. Insert the new song data at the array positions indicated by the songCount.  
-   Remember, C# arrays indices start at 0, not 1!
-
-c. Make sure, BEFORE you try adding anything to an array, that your songCount is 
-   not higher than the number of spaces in the array!  If it is, then pop up a Messagebox 
-   stating that the user has reached their five-song limit. 
-
-d. NOTE: the text in textboxes is immutable, which means that you have to store it in a 
-   variable before you can perform other operations. 
-
-             */
-
             outputText.Text = "";
 
             StringBuilder sb = new StringBuilder(outputText.Text);
@@ -103,17 +86,24 @@ d. NOTE: the text in textboxes is immutable, which means that you have to store 
 
             if (ValidInput()) // If all text boxes have input 
             {
-                // Adds title, artists, genre, year, and url to arrays
-                songList.Items.Add(titleText.Text);
-                titleArray[songCount] = titleText.Text;
-                artistArray[songCount] = artistText.Text;
-                genreArray[songCount] = genreComboBox.SelectedItem.ToString();
-                urlArray[songCount] = urlText.Text;
-                yearArray[songCount] = int.Parse(yearText.Text);
+                if (songCount > 5)
+                {
+                    MessageBox.Show("5-song limit has been reached");
+                }
+                else
+                {
+                    // Adds title, artists, genre, year, and url to arrays
+                    songList.Items.Add(titleText.Text);
+                    titleArray[songCount] = titleText.Text;
+                    artistArray[songCount] = artistText.Text;
+                    genreArray[songCount] = genreComboBox.SelectedItem.ToString();
+                    urlArray[songCount] = urlText.Text;
+                    yearArray[songCount] = int.Parse(yearText.Text);
 
+                    // Increments song counter after every song added
+                    songCount++;
 
-                // Increments song counter after every song added
-                songCount++;
+                }
 
                 // No blank inputs,
                 // Build output text
