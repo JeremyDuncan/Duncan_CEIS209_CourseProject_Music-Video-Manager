@@ -16,7 +16,7 @@ namespace Duncan_CourseProject_part1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new videoManagerForm());
+            Application.Run(new VideoManagerForm());
         }
     }
 }

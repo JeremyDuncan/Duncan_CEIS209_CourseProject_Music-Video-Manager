@@ -10,9 +10,12 @@ using System.Windows.Forms;
 
 namespace Duncan_CourseProject_part1
 {
-    public partial class videoManagerForm : Form
+    public partial class VideoManagerForm : Form
     {
-        public videoManagerForm()
+        //Declare arrays of titles, artists, genres, years, and URLs.
+        
+
+        public VideoManagerForm()
         {
             InitializeComponent();
         }

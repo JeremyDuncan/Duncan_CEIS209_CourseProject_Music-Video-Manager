@@ -1,6 +1,6 @@
 ﻿namespace Duncan_CourseProject_part1
 {
-    partial class videoManagerForm
+    partial class VideoManagerForm
     {
         /// <summary>
         /// Required designer variable.
