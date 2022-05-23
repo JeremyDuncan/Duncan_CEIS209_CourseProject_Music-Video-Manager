@@ -227,11 +227,8 @@ namespace Duncan_CourseProject_CEIS209
                 {
                     webViewDisplay.CoreWebView2.Navigate("https://" + url);
                 }
-
             }
-           
         }
-
 
         // Save File Section ==================================================
         private void Data()
